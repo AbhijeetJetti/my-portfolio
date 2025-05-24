@@ -1,191 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="styles.css">
-</head>
-
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Abhijeet Jetti - Portfolio</title>
+    <link rel="stylesheet" href="index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
     <nav>
-        <div id="home">
-            <div class="profile_name">
-                Abhijeet Jetti
-                <div class="contact_info">
-                    <img src="images/mail_image.jpg" alt="email">
-                    <a href="mailto:abhijeetjetti2105@gmail.com">abhijeetjetti2105@gmail.com</a>
-                </div>
-                <div style="clear:both;"></div>
-                <div class="contact_info">
-                    <img src="images/LinnkedIn_img.png" alt="linkedin">
-                    <a href="https://www.linkedin.com/in/abhijeet-jetti-934796275/">abhijeet_jetti</a>
-                </div>
-                <div style="clear:both;"></div>
-                <div class="contact_info">
-                    <img src="images/github_img.png" alt="github">
-                    <a href="https://github.com/AbhijeetJetti">AbhijeetJetti</a>
-                </div>
-            </div>
-            <div class="topdiv">
-                <a class="topmenu" href="#about-me">About Me</a>
-                <a class="topmenu" href="#skills">Skills</a>
-                <a class="topmenu" href="#projects">Projects</a>
-                <a class="topmenu" href="#recommendations">Recommendations</a>
-
-            </div>
+      <div class="nav-container">
+        <div class="profile-info">
+          <div class="profile-name">Abhijeet Jetti</div>
+          <div class="contact-links">
+            <a href="mailto:abhijeetjetti2105@gmail.com" class="contact-link">
+              <div
+                class="contact-icon"
+                style="
+                  background: #ea4335;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 12px;
+                "
+              >
+                @
+              </div>
+              Email
+            </a>
+            <a
+              href="https://www.linkedin.com/in/abhijeet-jetti-934796275/"
+              class="contact-link"
+            >
+              <div
+                class="contact-icon"
+                style="
+                  background: #0077b5;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 12px;
+                "
+              >
+                in
+              </div>
+              LinkedIn
+            </a>
+            <a href="https://github.com/AbhijeetJetti" class="contact-link">
+              <div
+                class="contact-icon"
+                style="
+                  background: #333;
+                  display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  color: white;
+                  font-size: 12px;
+                "
+              >
+                gh
+              </div>
+              GitHub
+            </a>
+          </div>
         </div>
+        <div class="nav-menu">
+          <a href="#hero" class="nav-link">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#skills" class="nav-link">Skills</a>
+          <a href="#projects" class="nav-link">Projects</a>
+          <a href="#recommendations" class="nav-link">Recommendations</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </div>
     </nav>
-    <section id="about-me" class="container">
-        <div>
-          <img src="images/animated_photo.jpg" class="profile_image"/>
-        </div>
-  
-        <div>
-            <h1>
-              Hi, I'm Abhijeet Jetti! <img src="images/waving_hand.png" width="60px"/>
-            </h1>
-            <p>
-              I am a passionate Computer Science Engineering student with interest in Data Science, I spend my free time working on data sets which seem interesting and 
-                try finding patterns in them. I also try to integrate them with web development and visualisation to make them easier to read and understand.
-            </p>
-        </div>
-      </section>
-      <section id="skills">
-        <h2>Skills</h2>
-        <div style="clear:both;"></div>
-  
-        <div class="all_skills">
-          <div class="skill">
-            <img src="images\HTML_img.png"/>
-            <h6>HTML</h6>
-            
-          </div>  
-  
-          <div class="skill">
-            <img src="images\js_img.png"/>
-            <h6>JavaScript</h6>
-            
-          </div>  
-          <div class="skill">
-            <img src="images\css_img.jpg"/>
-            <h6>CSS</h6>
-            
-          </div>  
-          <div class="skill">
-            <img src="images/react_img.png"/>
-            <h6>React</h6>
-            
-          </div>
-          <div class="skill">
-            <img src="images\nodejs_img.png"/>
-            <h6>Node JS</h6>
-            
-          </div>
-          <div class="skill">
-            <img src="images\tableau_img.png"/>
-            <h6>Tableau</h6>
-            
-          </div>
-          <div class="skill">
-            <img src="images\sheets_img.png"/>
-            <h6>Google Sheets</h6>
-            
-          </div>
-          <div class="skill">
-            <img src="images\SQL_img.png"/>
-            <h6>SQL</h6>
-            
-          </div> 
-        </div>
-      </section>
 
-
-
-      <section class="projects" id="projects">
-        <h2>
-          Projects
-        </h2>
-        <div style="clear:both;"></div>
-  
-          <div id="projects-container" class="projects-container">
-            <div class="project-card">
-              <h3>Chatbot</h3>
-              <ul>
-                <li>Developed a secure website integrated with chatbot for an automobile client using HTML, CSS, JavaScript and Gemini API</li>
-              </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-              <h3>Smart BMI Analyzer</h3>
-              <ul>
-                <li>Engineered an interactive BMI calculator with real-time insights, AI-driven voice assistance, and gamified health 
-tracking, boosting user engagement by 40%. </li>
-                  <li>Optimized system performance to support 1,000+ active users monthly, enhancing response accuracy by 35% 
-through intelligent automation. </li>
-              </ul>
-            </div>
-            <hr>
-            <div class="project-card">
-              <h3>AutoMail Response System</h3>
-              <ul>
-                <li> Automated recruitment email responses with predefined templates, streamlining HR operations and 
-reducing manual workload by 40%.</li>
-                  <li> Implemented secure email handling, enabling 500+ automated emails daily, ensuring seamless and professional 
-communication. </li>
-              </ul>
-            </div>
-              <div class="project-card">
-              <h3>MusicMood Analytics – Predicting Listener Emotions</h3>
-              <ul>
-                <li> Developed an ML model to analyze genres and lyrics, achieving 85% accuracy in predicting listener emotions.</li>
-                  <li> Processed and analyzed 1M+ data points using advanced NLP techniques, generating actionable insights on 
-music-driven emotions. </li>
-              </ul>
-            </div>
+    <section id="hero">
+      <div class="hero-content">
+        <img
+          src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='200' height='200' viewBox='0 0 200 200'%3E%3Ccircle cx='100' cy='100' r='90' fill='%23667eea'/%3E%3Ctext x='100' y='120' text-anchor='middle' fill='white' font-size='80' font-family='Arial'%3EAJ%3C/text%3E%3C/svg%3E"
+          alt="Profile"
+          class="profile-image"
+        />
+        <h1 class="hero-title">Hi, I'm Abhijeet Jetti! 👋</h1>
+        <p class="hero-subtitle">
+          Computer Science Engineering Student & Data Science Enthusiast
+        </p>
+        <p class="hero-description">
+          I am passionate about finding patterns in data and integrating them
+          with web development and visualization to make insights easier to read
+          and understand.
+        </p>
       </div>
-      </section>
+    </section>
 
+    <section id="about">
+      <h2 class="section-title">About Me</h2>
+      <div
+        style="
+          text-align: center;
+          font-size: 1.2rem;
+          color: var(--text-secondary);
+          max-width: 800px;
+          margin: 0 auto;
+        "
+      >
+        I spend my free time working on datasets that seem interesting and try
+        finding patterns in them. I also integrate them with web development and
+        visualization to make data more accessible and understandable for
+        everyone.
+      </div>
+    </section>
 
-
-      
-      <section id="recommendations">
-        <h2>Recommendations</h2>
-        <div style="clear:both;"></div>
-        <div class="all_recommendations" id="all_recommendations">
-          <div class="recommendation">
-            
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #e34f26;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            HTML
           </div>
+          <div class="skill-name">HTML</div>
         </div>
-      </section>
-
-      <section id="contact">
-        <div class="flex_center">
-          <fieldset>
-            <legend class="introduction">Leave a Recommendation</legend>          
-            <input type="text" placeholder="Name (Optional)"> <br/>
-            <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
-            <div class="flex_center">
-              <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
-            </div>
-          </fieldset>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #f7df1e;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: black;
+              font-weight: bold;
+            "
+          >
+            JS
+          </div>
+          <div class="skill-name">JavaScript</div>
         </div>
-      </section>
-  
-      <div class="iconbutton">
-        <a href="#home">
-        <img src="images\arrow_img.png" alt="Go to top" width="50px" height="50px">
-        </a>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #1572b6;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            CSS
+          </div>
+          <div class="skill-name">CSS</div>
+        </div>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #61dafb;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: black;
+              font-weight: bold;
+            "
+          >
+            ⚛
+          </div>
+          <div class="skill-name">React</div>
+        </div>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #339933;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            NODE
+          </div>
+          <div class="skill-name">Node.js</div>
+        </div>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #e97627;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            TAB
+          </div>
+          <div class="skill-name">Tableau</div>
+        </div>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #0f9d58;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            GS
+          </div>
+          <div class="skill-name">Google Sheets</div>
+        </div>
+        <div class="skill-card">
+          <div
+            class="skill-icon"
+            style="
+              background: #cc2927;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: white;
+              font-weight: bold;
+            "
+          >
+            SQL
+          </div>
+          <div class="skill-name">SQL</div>
+        </div>
       </div>
-  
-      <div class="popup" id="popup" class="flex_center">
-        <img src="images\advice_img.png"/>
-        <h3>Please mail them to me</h3>
-        <button onclick="showPopup(false)">Ok</button>
+    </section>
+
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a
+            href="https://github.com/AbhijeetJetti/Affordable-parking-space-system"
+            target="_blank"
+            class="project-link-icon"
+            title="View on GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+          <h3 class="project-title">Affordable Parking System</h3>
+          <ul class="project-features">
+            <li>
+              This project is a smart and affordable parking management solution
+              that uses YOLO (You Only Look Once) and OpenCV to detect whether
+              parking slots are occupied in real-time from a video feed...
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <a
+            href="https://smart-bmi-analyser.vercel.app/"
+            target="_blank"
+            class="project-link-icon"
+            title="Open Smart BMI Analyzer"
+          >
+            <i class="fas fa-arrow-up-right-from-square"></i>
+          </a>
+          <h3 class="project-title">Smart BMI Analyzer</h3>
+          <ul class="project-features">
+            <li>
+              Engineered an interactive BMI calculator with real-time insights,
+              AI-driven voice assistance, and gamified health tracking...
+            </li>
+          </ul>
+        </div>
+
+        <div class="project-card">
+          <h3 class="project-title">
+            MusicMood Analytics – Predicting Listener Emotions
+          </h3>
+          <ul class="project-features">
+            <li>
+              Developed an ML model to analyze genres and lyrics, achieving 85%
+              accuracy in predicting listener emotions
+            </li>
+            <li>
+              Processed and analyzed 1M+ data points using advanced NLP
+              techniques, generating actionable insights on music-driven
+              emotions
+            </li>
+          </ul>
+        </div>
       </div>
+    </section>
 
-</body>
+    <section id="recommendations">
+      <h2 class="section-title">Recommendations</h2>
+      <div class="recommendations-grid" id="recommendations-grid">
+        <div class="recommendation-card">
+          Share your thoughts about working with me!
+        </div>
+      </div>
+    </section>
 
+    <section id="contact">
+      <h2 class="section-title">Leave a Recommendation</h2>
+      <div class="contact-form">
+        <div class="form-group">
+          <input
+            type="text"
+            class="form-input"
+            placeholder="Your Name (Optional)"
+            id="recommender-name"
+          />
+        </div>
+        <div class="form-group">
+          <textarea
+            class="form-input"
+            rows="6"
+            placeholder="Your message..."
+            id="recommendation-text"
+          ></textarea>
+        </div>
+        <button class="submit-btn" onclick="addRecommendation()">
+          Submit Recommendation
+        </button>
+      </div>
+    </section>
+
+    <div class="scroll-top" id="scroll-top" onclick="scrollToTop()">
+      <span style="color: white; font-size: 24px">↑</span>
+    </div>
+
+    <div class="popup" id="popup">
+      <div style="font-size: 48px; margin-bottom: 1rem">📧</div>
+      <h3>Thanks for your recommendation!</h3>
+      <p style="color: var(--text-secondary); margin-bottom: 2rem">
+        Your feedback means a lot to me.
+      </p>
+      <button class="popup-btn" onclick="hidePopup()">Close</button>
+    </div>
+    <script src="index.js"></script>
+  </body>
 </html>
