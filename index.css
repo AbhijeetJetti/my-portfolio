@@ -257,7 +257,7 @@ section {
 }
 
 .skill-icon {
-    width: 80px;  /* increased from 60px */
+    width: 80px;
     height: 80px;
     margin: 0 auto 1rem;
     border-radius: 12px;
@@ -303,11 +303,144 @@ section {
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
 }
 
+/* Enhanced Project Link Icons */
+.project-link-icon {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 60px;
+    height: 60px;
+    background: var(--primary-gradient);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    z-index: 10;
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.project-link-icon:hover {
+    transform: translateY(-5px) scale(1.15);
+    box-shadow: 0 12px 30px rgba(102, 126, 234, 0.7);
+    background: var(--secondary-gradient);
+}
+
+.project-link-icon i {
+    font-size: 24px;
+    color: white;
+    transition: all 0.3s ease;
+}
+
+.project-link-icon:hover i {
+    transform: scale(1.1);
+}
+
+/* GitHub icon specific styling */
+.project-link-icon .fa-github {
+    font-size: 26px;
+}
+
+/* External link icon specific styling */
+.project-link-icon .fa-arrow-up-right-from-square {
+    font-size: 22px;
+    
+}
+
+/* Floating style variant */
+.project-link-icon.floating {
+    border-radius: 50%;
+    background: var(--accent-gradient);
+    top: -15px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+    box-shadow: 0 8px 25px rgba(79, 172, 254, 0.5);
+}
+
+.project-link-icon.floating:hover {
+    transform: translateY(-8px) scale(1.2);
+    box-shadow: 0 15px 35px rgba(79, 172, 254, 0.8);
+}
+
+.project-link-icon.floating i {
+    font-size: 28px;
+    
+}
+
+/* Pulse animation for extra attention */
+@keyframes pulse {
+    0% {
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+    50% {
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.8);
+    }
+    100% {
+        box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+    }
+}
+
+.project-link-icon.pulse {
+    animation: pulse 2s infinite;
+}
+
+/* Tooltip for better UX */
+.project-link-icon::after {
+    content: attr(title);
+    position: absolute;
+    bottom: -40px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 0, 0, 0.9);
+    color: white;
+    padding: 8px 12px;
+    border-radius: 8px;
+    font-size: 12px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+    font-family: inherit;
+}
+
+.project-link-icon:hover::after {
+    opacity: 1;
+}
+
+/* Project status badge for projects without links */
+.project-status-badge {
+    position: absolute;
+    top: 1.5rem;
+    right: 1.5rem;
+    width: 60px;
+    height: 60px;
+    background: var(--secondary-gradient);
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0.8;
+    transition: all 0.3s ease;
+}
+
+.project-status-badge:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.project-status-badge i {
+    font-size: 24px;
+    color: white;
+}
+
 .project-title {
     font-size: 1.5rem;
     font-weight: 700;
     margin-bottom: 1rem;
     color: var(--text-primary);
+    padding-right: 80px; /* Add space for the icon */
 }
 
 .project-features {
@@ -504,10 +637,63 @@ section {
     .skills-grid {
         grid-template-columns: 1fr 1fr;
     }
+
+    .project-link-icon {
+        width: 50px;
+        height: 50px;
+        top: 1rem;
+        right: 1rem;
+        border-radius: 12px;
+    }
+    
+    .project-link-icon i {
+        font-size: 20px;
+    }
+    
+    .project-link-icon.floating {
+        width: 60px;
+        height: 60px;
+        top: -12px;
+        right: 15px;
+    }
+    
+    .project-link-icon.floating i {
+        font-size: 24px;
+    }
+    
+    .project-title {
+        padding-right: 65px;
+        font-size: 1.3rem;
+    }
+
+    .project-status-badge {
+        width: 50px;
+        height: 50px;
+        top: 1rem;
+        right: 1rem;
+    }
+
+    .project-status-badge i {
+        font-size: 20px;
+    }
 }
 
 @media (max-width: 480px) {
     .skills-grid {
         grid-template-columns: 1fr;
+    }
+
+    .project-link-icon {
+        width: 45px;
+        height: 45px;
+    }
+    
+    .project-link-icon i {
+        font-size: 18px;
+    }
+
+    .project-title {
+        padding-right: 55px;
+        font-size: 1.2rem;
     }
 }
